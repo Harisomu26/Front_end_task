@@ -1,0 +1,172 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+
+
+<div class="topnav">
+
+    <p class="logo">Blabla Cart</p>
+
+    <span class="dot">{{cart_cout}}</span>
+
+    <span class="cart_icon" (click)="cart1()" id="myBtn"> <i class="fa fa-shopping-cart" style="color: white;"
+            aria-hidden="true"></i> Cart </span>
+    <span class="user_icon"><i class="fa fa-user-circle" aria-hidden="true"></i> UserName </span>
+</div>
+
+
+<div class="container" style="max-width: 1600px !important; ">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="sidenav">
+                <p class="category" (click)="cat1()">Category 1</p>
+                <p class="category" (click)="cat2()">Category 2</p>
+                <p class="category" (click)="cat3()">Category 3</p>
+                <p class="category" (click)="cat4()">Category 4</p>
+
+            </div>
+        </div>
+        <div class="col-md-9" style="border: solid 1px #67696f;border-radius: 3px;">
+            <p class="main_header">{{this.catt}} </p>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card" id="Kids" #ref>
+                        <div class="image">
+                            <img class="card-img-top" width="100" height="170" style="border-radius: 10px;"
+                                src="https://ak.picdn.net/shutterstock/videos/23935711/thumb/1.jpg"
+                                alt="Card image cap">
+                        </div>
+                        <p style="padding: .5em 1em; font-weight: bold;font-size: 17px;color: white;">Kids</p>
+                        <button (click)="cart_list(ref.id)" class="but">Add to cart</button>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" id="Mens" #ref1>
+                        <div class="image">
+                            <img class="card-img-top" width="100" height="170" style="border-radius: 10px;"
+                                src="https://ak.picdn.net/shutterstock/videos/23935711/thumb/1.jpg"
+                                alt="Card image cap">
+                        </div>
+                        <p style="padding: .5em 1em;font-weight: bold;font-size: 17px;color: white;">Mens</p>
+                        <button (click)="cart_list(ref1.id)" class="but">Add to cart</button>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" id="Womens" #ref3>
+                        <div class="image">
+                            <img class="card-img-top" width="100" height="170" style="border-radius: 10px;"
+                                src="https://ak.picdn.net/shutterstock/videos/23935711/thumb/1.jpg"
+                                alt="Card image cap">
+                        </div>
+                        <p style="padding: .5em 1em;font-weight: bold;font-size: 17px;color: white;">Womens</p>
+                        <button (click)="cart_list(ref3.id)" class="but">Add to cart</button>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" id="Sports" #ref4>
+                        <div class="image">
+                            <img class="card-img-top" width="100" height="170" style="border-radius: 10px;"
+                                src="https://ak.picdn.net/shutterstock/videos/23935711/thumb/1.jpg"
+                                alt="Card image cap">
+                        </div>
+                        <p style="padding: .5em 1em;font-weight: bold;font-size: 17px;color: white;">Sports</p>
+                        <button (click)="cart_list(ref4.id)" class="but">Add to cart</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card" id="Computers" #ref5>
+                        <div class="image">
+                            <img class="card-img-top" width="100" height="170" style="border-radius: 10px;"
+                                src="https://ak.picdn.net/shutterstock/videos/23935711/thumb/1.jpg"
+                                alt="Card image cap">
+                        </div>
+                        <p style="padding: .5em 1em;font-weight: bold;font-size: 17px;color: white;">Computers</p>
+                        <button (click)="cart_list(ref5.id)" class="but">Add to cart</button>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" id="Mobiles" #ref6>
+                        <div class="image">
+                            <img class="card-img-top" width="100" height="170" style="border-radius: 10px;"
+                                src="https://ak.picdn.net/shutterstock/videos/23935711/thumb/1.jpg"
+                                alt="Card image cap">
+                        </div>
+                        <p style="padding: .5em 1em;font-weight: bold;font-size: 17px;color: white;">Mobiles</p>
+                        <button (click)="cart_list(ref6.id)" class="but">Add to cart</button>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" id="Electronics" #ref7>
+                        <div class="image">
+                            <img class="card-img-top" width="100" height="170" style="border-radius: 10px;"
+                                src="https://ak.picdn.net/shutterstock/videos/23935711/thumb/1.jpg"
+                                alt="Card image cap">
+                        </div>
+                        <p style="padding: .5em 1em;font-weight: bold;font-size: 17px;color: white;">Electronics</p>
+                        <button (click)="cart_list(ref7.id)" class="but">Add to cart</button>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" id="Others" #ref8>
+                        <div class="image">
+                            <img class="card-img-top" width="100" height="170" style="border-radius: 10px;"
+                                src="https://ak.picdn.net/shutterstock/videos/23935711/thumb/1.jpg"
+                                alt="Card image cap">
+                        </div>
+                        <p style="padding: .5em 1em;font-weight: bold;
+                        font-size: 17px;
+                        color: white;">Others</p>
+                        <button (click)="cart_list(ref8.id)" class="but">Add to cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<!-- <button (click)="cart1()" id="myBtn">Open Modal</button> -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span (click)="cart1_close()" class="close">&times;</span>
+        <h2>({{cart_cout}}) Items In Your Cart..!</h2>
+        <!-- <div class="list_cart" id="div2">
+    </div> -->
+        <div class="col-sm-3">
+            <div class="card1" id="card11">
+                <div class="image">
+
+                    <img src="https://ak.picdn.net/shutterstock/videos/23935711/thumb/1.jpg" width="189" height="188"
+                        style="border-radius: 10px;margin-left: 1px;margin-top: 1px;" alt="">
+                    <p class="pro_name">{{this.cart_id}}</p>
+
+                    <p class="quan">Quantity: <input class="selector" type="number" id="quantity" value=0
+                            name="quantity" min="1" max="5">
+                    </p>
+                    <button type="button" style="margin-top: 33px;margin-left: 544px;" class="btn btn-danger"
+                        (click)="remove()">Remove</button>
+
+                </div>
+            </div>
+            <div id="clon">
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
